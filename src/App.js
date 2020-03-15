@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.css";
+import "font-awesome/css/font-awesome.css";
+import BackGround from "./photos/utility.jpg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid" style={main}>
+      <h1>Hello World!</h1>
     </div>
   );
 }
+
+const main = {
+  backgroundImage: `url(${BackGround})`,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  height: "721px"
+};
 
 export default App;
