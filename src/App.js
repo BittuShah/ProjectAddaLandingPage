@@ -1,19 +1,22 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "font-awesome/css/font-awesome.css";
-import BackGround from "./photos/utility.jpg";
+import BackGround from "./photos/new.jpg";
+import Logo from "./photos/1.png";
 
 function App() {
   return (
     <div className="container-fluid text-center" style={main}>
       <div style={overlay} className="text-center"></div>
+      <img src={Logo} alt="Logo of the website" style={logo} />
+
       <div style={content} className="text-left">
         <h1>
           THE NEXT <br /> BIG THING IS HERE
         </h1>
-        <h4 style={{ marginTop: "20px" }}>
+        <h5 style={{ marginTop: "20px" }}>
           OH, AND WE'RE LAUCHING OUR OWN THING THAT'S PRETTY COOL
-        </h4>
+        </h5>
       </div>
       <div className="row" style={emailBox}></div>
       <div className="row" style={box}>
@@ -47,8 +50,15 @@ function App() {
                   placeholder="Enter Email..."
                   style={{ marginRight: "0px" }}
                 />
-                <button className="btn btn-primary col-lg-3">
-                  STAY CONFIRMED
+                <button
+                  className="btn btn-primary col-lg-3 p-0"
+                  style={{
+                    letterSpacing: "0.1em",
+                    backgroundColor: "#ff7f50",
+                    border: "none"
+                  }}
+                >
+                  STAY CONNECTED
                 </button>
               </div>
             </div>
@@ -66,7 +76,8 @@ const main = {
   height: "721px",
   padding: "0px",
   position: "relative",
-  overflowX: "hidden"
+  overflowX: "hidden",
+  fontFamily: "cursive"
 };
 
 const overlay = {
@@ -78,13 +89,21 @@ const overlay = {
   padding: "0px"
 };
 
+const logo = {
+  position: "absolute",
+  marginLeft: "-670px",
+  marginTop: "30px",
+  height: "200px",
+  width: "200px"
+};
+
 const content = {
   position: "absolute",
   height: "200px",
   width: "800px",
   marginLeft: "100px",
-  marginTop: "250px",
-  color: "#e2e6e6"
+  marginTop: "300px",
+  color: "white"
 };
 
 const emailBox = {
