@@ -1,0 +1,559 @@
+.main {
+  background-image: url(../photos/new.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 721px;
+  padding: 0px;
+  position: relative;
+  overflow-x: hidden;
+  font-family: cursive;
+}
+
+.overlay {
+  background-color: black;
+  height: inherit;
+  opacity: 0.5;
+  position: absolute;
+  width: inherit;
+  padding: 0px;
+}
+
+.logo {
+  position: absolute;
+  margin-left: -670px;
+  margin-top: 30px;
+  height: 200px;
+  width: 200px;
+}
+
+.about {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 620px;
+  background-color: #ff7f50;
+  border: none;
+}
+
+.content {
+  position: absolute;
+  height: 200px;
+  width: 800px;
+  margin-left: 100px;
+  margin-top: 300px;
+  color: white;
+  /* border: 1px solid red; */
+}
+
+.emailBox {
+  height: 230px;
+  width: 1550px;
+  background-color: black;
+  opacity: 0.2;
+  /* marginTop: 490px; */
+  position: relative;
+  top: 490px;
+  z-index: 0;
+}
+
+.box {
+  /* width: 775px; */
+  /* border: 5px solid black; */
+  z-index: 10;
+  height: 220px;
+  position: relative;
+  /* backgroundColor: red; */
+  top: 260px;
+  color: white;
+}
+
+.mailForm {
+  margin-top: 50px;
+}
+
+.emailLabel {
+  margin-left: -460px;
+  font-family: Times New Roman, serif;
+  letter-spacing: 0.1em;
+}
+
+.emailChildTagLine {
+  margin-left: 115px;
+  margin-top: 15px;
+}
+
+.emailInput {
+  margin-right: 0px;
+}
+
+.emailButton {
+  letter-spacing: 0.1em;
+  background-color: #ff7f50;
+  border: none;
+  color: white;
+}
+
+.navA {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 16px;
+  outline: 0;
+}
+
+.navA:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.insta:hover {
+  color: #b7358a;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+}
+
+.git:hover {
+  color: green;
+  /* background-color: white; */
+}
+
+.icons {
+  margin-right: 25px;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+  .main {
+    /* background-size: 1500px; */
+    /* background-attachment: fixed; */
+    background-position: center;
+    /* background-clip: unset; */
+    height: 578px;
+  }
+
+  /* .overlay {
+    height: 100%;
+  } */
+
+  .logo {
+    height: 150px;
+    width: 130px;
+    /* z-index: 10; */
+    /* top: 20px; */
+    margin-left: -130px;
+    /* left: 150px; */
+    position: absolute;
+  }
+
+  .content {
+    margin-left: 15px;
+    height: 50px;
+  }
+
+  .about {
+    /* top: -10px; */
+    margin-left: 50px;
+  }
+
+  .mainTagLine {
+    font-size: 30px;
+  }
+
+  .childTagLine {
+    font-size: 9px;
+  }
+
+  .emailBox {
+    top: 450px;
+    height: 300px;
+    /* border: 2px solid red; */
+  }
+
+  .box {
+    top: 140px;
+    /* border: 2px solid green; */
+  }
+
+  .mailForm {
+    margin-top: 15px;
+    padding: 5px;
+  }
+
+  .emailLabel {
+    margin: auto;
+    font-family: Times New Roman, serif;
+    letter-spacing: 0.1em;
+    /* margin-top: 10px; */
+  }
+
+  .emailTagLine {
+    font-size: 20px;
+  }
+
+  .emailChildTagLine {
+    margin-left: 50px;
+    font-size: 15px;
+  }
+
+  .emailInput {
+    width: 5px;
+    height: 45px;
+    /* border-radius: 17px; */
+    margin: 5px;
+  }
+
+  .emailButton {
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 4px;
+    height: 35px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+  /* smartphones, Android phones, landscape iPhone */
+
+  .main {
+    /* background-size: 1500px; */
+    /* background-attachment: fixed; */
+    background-position: center;
+    /* background-clip: unset; */
+    height: 578px;
+  }
+
+  /* .overlay {
+    height: 100%;
+  } */
+
+  .logo {
+    height: 150px;
+    width: 130px;
+    /* z-index: 10; */
+    /* top: 20px; */
+    margin-left: -130px;
+    /* left: 150px; */
+    position: absolute;
+  }
+
+  .content {
+    margin-left: 15px;
+    height: 50px;
+  }
+
+  .about {
+    /* top: -10px; */
+    margin-left: 50px;
+  }
+
+  .mainTagLine {
+    font-size: 30px;
+  }
+
+  .childTagLine {
+    font-size: 9px;
+  }
+
+  .emailBox {
+    top: 450px;
+    height: 300px;
+    /* border: 2px solid red; */
+  }
+
+  .box {
+    top: 140px;
+    /* border: 2px solid green; */
+  }
+
+  .mailForm {
+    margin-top: 15px;
+    padding: 5px;
+  }
+
+  .emailLabel {
+    margin: auto;
+    font-family: Times New Roman, serif;
+    letter-spacing: 0.1em;
+    /* margin-top: 10px; */
+  }
+
+  .emailTagLine {
+    font-size: 20px;
+  }
+
+  .emailChildTagLine {
+    margin-left: 50px;
+    font-size: 15px;
+  }
+
+  .emailInput {
+    width: 5px;
+    height: 45px;
+    /* border-radius: 17px; */
+    margin: 5px;
+  }
+
+  .emailButton {
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 4px;
+    height: 35px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+  .main {
+    /* background-size: 1500px; */
+    /* background-attachment: fixed; */
+    background-position: center;
+    /* background-clip: unset; */
+    height: 578px;
+  }
+
+  /* .overlay {
+    height: 100%;
+  } */
+
+  .logo {
+    height: 150px;
+    width: 130px;
+    /* z-index: 10; */
+    /* top: 20px; */
+    margin-left: -300px;
+    /* left: 150px; */
+    position: absolute;
+  }
+
+  .content {
+    margin-left: 15px;
+    height: 50px;
+  }
+
+  .about {
+    /* top: -10px; */
+    margin-left: 50px;
+  }
+
+  .mainTagLine {
+    font-size: 35px;
+  }
+
+  .childTagLine {
+    font-size: 15px;
+  }
+
+  .emailBox {
+    top: 450px;
+    height: 300px;
+    /* border: 2px solid red; */
+  }
+
+  .box {
+    top: 140px;
+    /* border: 2px solid green; */
+  }
+
+  .mailForm {
+    margin-top: 15px;
+    padding: 5px;
+  }
+
+  .emailLabel {
+    margin: auto;
+    font-family: Times New Roman, serif;
+    letter-spacing: 0.1em;
+    /* margin-top: 10px; */
+  }
+
+  .emailTagLine {
+    font-size: 20px;
+  }
+
+  .emailChildTagLine {
+    margin-left: 200px;
+    font-size: 15px;
+  }
+
+  .emailInput {
+    width: 5px;
+    height: 45px;
+    /* border-radius: 17px; */
+    margin: 5px;
+  }
+
+  .emailButton {
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 4px;
+    height: 35px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 992px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+  .main {
+    /* background-size: 1500px; */
+    /* background-attachment: fixed; */
+    background-position: center;
+    /* background-clip: unset; */
+    height: 578px;
+  }
+
+  /* .overlay {
+    height: 100%;
+  } */
+
+  .logo {
+    height: 150px;
+    width: 130px;
+    /* z-index: 10; */
+    /* top: 20px; */
+    margin-left: -400px;
+    /* left: 150px; */
+    position: absolute;
+  }
+
+  .content {
+    margin-left: 15px;
+    height: 50px;
+  }
+
+  .about {
+    /* top: -10px; */
+    margin-left: 50px;
+  }
+
+  .mainTagLine {
+    font-size: 35px;
+  }
+
+  .childTagLine {
+    font-size: 15px;
+  }
+
+  .emailBox {
+    top: 450px;
+    height: 300px;
+    /* border: 2px solid red; */
+  }
+
+  .box {
+    top: 140px;
+    /* border: 2px solid green; */
+  }
+
+  .mailForm {
+    margin-top: 15px;
+    padding: 5px;
+  }
+
+  .emailLabel {
+    margin: auto;
+    font-family: Times New Roman, serif;
+    letter-spacing: 0.1em;
+    /* margin-top: 10px; */
+  }
+
+  .emailTagLine {
+    font-size: 20px;
+  }
+
+  .emailChildTagLine {
+    margin-left: 300px;
+    font-size: 15px;
+  }
+
+  .emailInput {
+    width: 5px;
+    height: 45px;
+    /* border-radius: 17px; */
+    margin: 5px;
+  }
+
+  .emailButton {
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 4px;
+    height: 35px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1281px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+  .main {
+    background-position: center;
+    height: 578px;
+  }
+
+  .logo {
+    height: 150px;
+    width: 130px;
+    margin-left: -400px;
+    position: absolute;
+  }
+
+  .content {
+    margin-left: 15px;
+    height: 50px;
+  }
+
+  .about {
+    margin-left: 50px;
+  }
+
+  .mainTagLine {
+    font-size: 35px;
+  }
+
+  .childTagLine {
+    font-size: 15px;
+  }
+
+  .emailBox {
+    top: 450px;
+    height: 300px;
+  }
+
+  .box {
+    top: 140px;
+  }
+
+  .mailForm {
+    margin-top: 15px;
+    padding: 5px;
+  }
+
+  .emailLabel {
+    margin: auto;
+    font-family: Times New Roman, serif;
+    letter-spacing: 0.1em;
+  }
+
+  .emailTagLine {
+    font-size: 20px;
+  }
+
+  .emailChildTagLine {
+    margin-left: 300px;
+    font-size: 15px;
+  }
+
+  .emailInput {
+    width: 5px;
+    height: 45px;
+    margin: 5px;
+  }
+
+  .emailButton {
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 4px;
+    height: 35px;
+  }
+}
