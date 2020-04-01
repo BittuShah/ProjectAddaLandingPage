@@ -24,9 +24,7 @@ const AboutUs = () => {
           <Link to="/" className={`col-lg-3 col-2 offset-lg-2`}>
             <i className={`fa fa-home ${styles.home}`}></i>
           </Link>
-          {/* </div> */}
-          {/* <hr /> */}
-          {/* <div className={`row ${styles.intro}`}> */}
+
           <div className={`col-lg-12`}>
             <h2 className={`${styles.tagLine}`}>
               We Are Here To Connect The People...

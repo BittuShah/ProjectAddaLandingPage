@@ -4,6 +4,7 @@ import styles from "../cssModules/style.module.css";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import Joi from "joi-browser";
+import axios from "axios";
 
 class HomePage extends Component {
   state = {
@@ -18,15 +19,19 @@ class HomePage extends Component {
       .label("Email")
   };
 
-  doSubmit = () => {
+  doSubmit = async () => {
     // Call Server
-    console.log("Submitted!");
+
+    const obj = { Email: this.state.data.email };
+    const { data: post } = await axios.post(
+      "https://projectsadda-api.herokuapp.com",
+      obj
+    );
+    console.log(post);
   };
 
   handleSubmit = e => {
     e.preventDefault();
-
-    // console.log("Submitted!");
 
     this.doSubmit();
 
@@ -37,14 +42,6 @@ class HomePage extends Component {
       showCloseButton: true,
       showConfirmButton: false
     });
-
-    // const errors = this.validate();
-    // console.log(errors);
-
-    // this.setState({ errors: errors || {} });
-    // if (errors) return;
-
-    // this.doSubmit();
   };
 
   validateProperty = ({ name, value }) => {
@@ -55,20 +52,14 @@ class HomePage extends Component {
   };
 
   handleChange = ({ currentTarget: input }) => {
-    // console.log(input);
-
     const errors = { ...this.state.errors };
     const errorMessage = this.validateProperty(input);
-    // console.log(errorMessage);
 
     if (errorMessage) errors[input.name] = errorMessage;
     else delete errors[input.name];
 
-    console.log(errorMessage);
-
     const data = { ...this.state.data };
     data[input.name] = input.value;
-    console.log(errors);
 
     this.setState({ data, errors });
   };
@@ -76,7 +67,6 @@ class HomePage extends Component {
   validate = () => {
     const options = { abortEarly: false };
     const { error } = Joi.validate(this.state.data, this.schema, options);
-    // console.log(result);
     if (!error) return null;
 
     const errors = {};
@@ -141,14 +131,7 @@ class HomePage extends Component {
                   >
                     STAY CONNECTED
                   </button>
-
-                  {/* <br /> */}
                 </div>
-                {/* {this.state.errors && (
-                  <div className="alert alert-danger">
-                    {this.state.errors.email}
-                  </div>
-                )} */}
               </div>
             </form>
 
@@ -162,7 +145,6 @@ class HomePage extends Component {
               >
                 <i className="fa fa-instagram" aria-hidden="true"></i>
               </a>
-              {/* <i className={`fa fa-instagram ${styles.icons}`} aria-hidden="true"></i> */}
               <a
                 className={`${styles.navA} ${styles.git} ${styles.icons}`}
                 href="https://github.com/BittuShah/"
@@ -171,7 +153,6 @@ class HomePage extends Component {
               >
                 <i className="fa fa-github" aria-hidden="true"></i>
               </a>
-              {/* <i className={`fa fa-github ${styles.icons}`} aria-hidden="true"></i> */}
               <a
                 className={`${styles.navA} ${styles.linkedin} ${styles.icons}`}
                 href="https://www.linkedin.com/in/parshv-shah-9313b9162/"
@@ -180,7 +161,6 @@ class HomePage extends Component {
               >
                 <i className="fa fa-linkedin" aria-hidden="true"></i>
               </a>
-              {/* <i className={`fa fa-linkedin ${styles.icons}`} aria-hidden="true"></i> */}
             </div>
           </div>
         </div>
