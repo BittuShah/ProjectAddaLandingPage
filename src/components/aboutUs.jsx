@@ -96,7 +96,7 @@ const AboutUs = () => {
             <div className={`text-center ${styles.links}`}>
               <a
                 className={`${styles.navA} ${styles.insta} ${styles.icons}`}
-                href="https://www.instagram.com/parshv__shah/"
+                href="https://www.instagram.com/n__i__s__u/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -105,7 +105,7 @@ const AboutUs = () => {
 
               <a
                 className={`${styles.navA} ${styles.git} ${styles.icons}`}
-                href="https://github.com/BittuShah/"
+                href="https://github.com/Nis41/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -114,7 +114,7 @@ const AboutUs = () => {
 
               <a
                 className={`${styles.navA} ${styles.linkedin} ${styles.icons}`}
-                href="https://www.linkedin.com/in/parshv-shah-9313b9162/"
+                href="https://www.linkedin.com/in/nisarg-patel-259003154"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -137,7 +137,7 @@ const AboutUs = () => {
             <div className={`text-center ${styles.links}`}>
               <a
                 className={`${styles.navA} ${styles.insta} ${styles.icons}`}
-                href="https://www.instagram.com/parshv__shah/"
+                href="https://www.instagram.com/__panchal__pratik__/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -146,7 +146,7 @@ const AboutUs = () => {
 
               <a
                 className={`${styles.navA} ${styles.git} ${styles.icons}`}
-                href="https://github.com/BittuShah/"
+                href="https://github.com/PratikPan/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -155,7 +155,7 @@ const AboutUs = () => {
 
               <a
                 className={`${styles.navA} ${styles.linkedin} ${styles.icons}`}
-                href="https://www.linkedin.com/in/parshv-shah-9313b9162/"
+                href="https://www.linkedin.com/in/pratik-panchal-003722161"
                 target="_blank"
                 rel="noopener noreferrer"
               >
