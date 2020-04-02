@@ -35,7 +35,7 @@ class HomePage extends Component {
     Swal.fire({
       icon: "success",
       title:
-        "You successfully registered registered your Email, And we'll let you when its ready!",
+        "You successfully registered your Email, And we'll let you know when its ready!",
       showCloseButton: true,
       showConfirmButton: false
     });
