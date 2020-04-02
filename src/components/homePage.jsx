@@ -23,10 +23,7 @@ class HomePage extends Component {
     // Call Server
 
     const obj = { Email: this.state.data.email };
-    const { data: post } = await axios.post(
-      "https://projectsadda-api.herokuapp.com",
-      obj
-    );
+    const { data: post } = await axios.post(process.env.REACT_APP_API_URL, obj);
     console.log(post);
   };
 
