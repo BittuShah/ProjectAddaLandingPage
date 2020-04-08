@@ -144,11 +144,11 @@
   } */
 
   .logo {
-    height: 150px;
-    width: 130px;
+    height: 135px;
+    width: 115px;
     /* z-index: 10; */
     /* top: 20px; */
-    margin-left: -130px;
+    margin-left: -150px;
     /* left: 150px; */
     position: absolute;
   }
@@ -160,7 +160,7 @@
 
   .about {
     /* top: -10px; */
-    margin-left: 50px;
+    margin-left: 70px;
   }
 
   .mainTagLine {
@@ -168,7 +168,7 @@
   }
 
   .childTagLine {
-    font-size: 9px;
+    font-size: 11px;
   }
 
   .emailBox {

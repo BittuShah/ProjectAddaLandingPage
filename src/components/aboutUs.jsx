@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../cssModules/aboutUs.module.css";
 import { Link } from "react-router-dom";
-import Logo from "../photos/orange_title.png";
+import Logo from "../photos/1.png";
 import Parshv from "../photos/parshv-compressed.jpg";
 import Nisu from "../photos/nisu-compressed.jpg";
 import Panchu from "../photos/panchu-compressed.jpg";
@@ -33,7 +33,7 @@ const AboutUs = () => {
           <br />
           <div className={`col-lg-4 offset-lg-1`}>
             <h4 className={` ${styles.parLineOne}`}>
-              We Provide A Platform For Engineers,
+              We Provide A Plattform For Engineers,
             </h4>
           </div>
           <div className={`col-lg-10 offset-lg-1`}>
@@ -49,7 +49,7 @@ const AboutUs = () => {
 
       <div className={`row`}>
         <h1 className={`col-lg-11 ${styles.title}`}>
-          Our Family <hr className={`${styles.line}`} />
+          Founders <hr className={`${styles.line}`} />
         </h1>
         <div className={`col-lg-3`}>
           <img src={Parshv} alt="Parshv Shah" className={`${styles.images}`} />
@@ -92,7 +92,7 @@ const AboutUs = () => {
           <img src={Nisu} alt="Nisarg Patel" className={`${styles.images}`} />
           <div className={`${styles.details}`}>
             <h4 className={`${styles.names}`}>Nisarg Patel</h4>
-            <h6 className={`${styles.degree}`}>M.C.A(INT), DCS, HNGU, PATAN</h6>
+            <h6 className={`${styles.degree}`}>M.C.A(int), DCS, HNGU, PATAN</h6>
             <div className={`text-center ${styles.links}`}>
               <a
                 className={`${styles.navA} ${styles.insta} ${styles.icons}`}
@@ -169,10 +169,11 @@ const AboutUs = () => {
       <div className={`row ${styles.footer}`}>
         <div className="col-lg-6 offset-lg-3">
           <h6 className={`${styles.footerText}`}>
-            Founders of ProjectsAdda :-{" "}
+            &copy; {new Date().getFullYear()} ProjectsAdda. All rights reserved.
+            {/* Founders of ProjectsAdda :-{" "}
             <span className={`${styles.founders}`}>
               Parshv Shah, Nisarg Patel, Pratik Panchal
-            </span>
+            </span> */}
           </h6>
         </div>
       </div>

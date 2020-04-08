@@ -2,9 +2,12 @@ import React, { Component } from "react";
 import Logo from "../photos/orange_title.png";
 import styles from "../cssModules/style.module.css";
 import { Link } from "react-router-dom";
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
+// import { ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import Joi from "joi-browser";
 import axios from "axios";
+// import "react-toastify/dist/ReactToastify.css";
 
 class HomePage extends Component {
   state = {
@@ -28,15 +31,20 @@ class HomePage extends Component {
 
     this.doSubmit();
 
-    Swal.fire({
-      icon: "success",
-      title:
-        "You successfully registered your Email, And we'll let you know when its ready!",
-      showCloseButton: true,
-      showConfirmButton: false,
-    });
+    toast.info("You successfully registered your Email.");
+
+    // Swal.fire({
+    //   icon: "success",
+    //   title:
+    //     "You successfully registered your Email, And we'll let you know when its ready!",
+    //   showCloseButton: true,
+    //   showConfirmButton: false,
+    // });
 
     document.getElementById("email").value = "";
+    let data = this.state.data;
+    data = "";
+    this.setState({ data });
   };
 
   validateProperty = ({ name, value }) => {

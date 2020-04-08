@@ -8,12 +8,15 @@ import HomePage from "./components/homePage";
 // import styles from "./cssModules/style.module.css";
 import AboutUs from "./components/aboutUs";
 import { Switch, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   // return <AboutUs />;
 
   return (
     <React.Fragment>
+      <ToastContainer />
       <Switch>
         <Route path="/aboutus" component={AboutUs} />
         <Route path="/" exact component={HomePage} />
