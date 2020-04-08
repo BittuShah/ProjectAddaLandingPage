@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Logo from "../photos/1.png";
+import Logo from "../photos/orange_title.png";
 import styles from "../cssModules/style.module.css";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
@@ -9,25 +9,21 @@ import axios from "axios";
 class HomePage extends Component {
   state = {
     data: { email: "" },
-    errors: {}
+    errors: {},
   };
 
   schema = {
-    email: Joi.string()
-      .required()
-      .email()
-      .label("Email")
+    email: Joi.string().required().email().label("Email"),
   };
 
   doSubmit = async () => {
     // Call Server
-
     const obj = { Email: this.state.data.email };
     await axios.post(process.env.REACT_APP_API_URL, obj);
     // console.log(post);
   };
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
 
     this.doSubmit();
@@ -37,8 +33,10 @@ class HomePage extends Component {
       title:
         "You successfully registered your Email, And we'll let you know when its ready!",
       showCloseButton: true,
-      showConfirmButton: false
+      showConfirmButton: false,
     });
+
+    document.getElementById("email").value = "";
   };
 
   validateProperty = ({ name, value }) => {
@@ -59,6 +57,8 @@ class HomePage extends Component {
     data[input.name] = input.value;
 
     this.setState({ data, errors });
+
+    // input.value = "";
   };
 
   validate = () => {
@@ -119,8 +119,10 @@ class HomePage extends Component {
                     className={`form-control col-lg-6 offset-lg-2 ${styles.emailInput}`}
                     name="email"
                     type="text"
+                    id="email"
                     onChange={this.handleChange}
                     placeholder="Enter Email..."
+                    autoFocus
                   />
                   <button
                     className={`btn col-lg-3 p-0 ${styles.emailButton}`}

@@ -1,14 +1,20 @@
+@font-face {
+  font-family: "je name rakhvu hoy ae";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
 .main {
   background-color: #e2e6e6;
   height: 100%;
   overflow-x: hidden;
   color: #200d2b;
-  font-family: open sans;
+  font-family: "je name rakhvu hoy ae", cursive;
   padding: 0;
+  overflow-y: hidden;
 }
 
 .back {
-  background-image: url(../photos/backgroundImage.png);
+  background-image: url(../photos/backgroundImage-compressed.jpg);
   /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
@@ -142,7 +148,7 @@
   background-color: burlywood;
   margin-top: 20px;
   height: 70px;
-  padding-top: 12px;
+  padding-top: 25px;
 }
 
 .footerText {

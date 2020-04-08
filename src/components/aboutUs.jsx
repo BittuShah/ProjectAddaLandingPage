@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "../cssModules/aboutUs.module.css";
 import { Link } from "react-router-dom";
-import Logo from "../photos/1.png";
-import Parshv from "../photos/parshv.jpg";
-import Nisu from "../photos/nisu.jpg";
-import Panchu from "../photos/panchu.jpg";
+import Logo from "../photos/orange_title.png";
+import Parshv from "../photos/parshv-compressed.jpg";
+import Nisu from "../photos/nisu-compressed.jpg";
+import Panchu from "../photos/panchu-compressed.jpg";
 
 const AboutUs = () => {
   return (
@@ -168,12 +168,12 @@ const AboutUs = () => {
 
       <div className={`row ${styles.footer}`}>
         <div className="col-lg-6 offset-lg-3">
-          <h5 className={`${styles.footerText}`}>
+          <h6 className={`${styles.footerText}`}>
             Founders of ProjectsAdda :-{" "}
             <span className={`${styles.founders}`}>
               Parshv Shah, Nisarg Patel, Pratik Panchal
             </span>
-          </h5>
+          </h6>
         </div>
       </div>
     </div>
