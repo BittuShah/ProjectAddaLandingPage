@@ -169,7 +169,7 @@ const AboutUs = () => {
       <div className={`row ${styles.footer}`}>
         <div className="col-lg-6 offset-lg-3">
           <h6 className={`${styles.footerText}`}>
-            &copy; {new Date().getFullYear()} ProjectsAdda. All rights reserved.
+            &copy; {new Date().getFullYear()} ProjectsAdda. All Rights Reserved.
             {/* Founders of ProjectsAdda :-{" "}
             <span className={`${styles.founders}`}>
               Parshv Shah, Nisarg Patel, Pratik Panchal

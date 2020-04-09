@@ -130,7 +130,6 @@ class HomePage extends Component {
                     id="email"
                     onChange={this.handleChange}
                     placeholder="Enter Email..."
-                    autoFocus
                   />
                   <button
                     className={`btn col-lg-3 p-0 ${styles.emailButton}`}
